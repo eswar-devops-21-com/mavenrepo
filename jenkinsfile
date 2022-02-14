@@ -15,7 +15,7 @@ stage('Build'){
 sh "${mavenHome}/bin/mvn clean package"
 }
 
-
+/*
 //Using sonar doing the quality check report
 stage('sonar'){
 sh "${mavenHome}/bin/mvn sonar:sonar"    
@@ -31,5 +31,5 @@ sshagent(['8b05b4bc-9e93-4526-b2a2-35e896fd501a']) {
 sh "scp -o StrictHostKeyChecking=no target/studentapp-2.5-SNAPSHOT.war ubuntu@3.110.136.225:/opt/Tomcat/webapps/"
     }  
        }
-
+*/
 }//pipe-line closing

@@ -14,6 +14,7 @@ stage('checkout'){
 stage('Build'){
 sh "${mavenHome}/bin/mvn clean package"
 }
+
 //Using sonar doing the quality check report
 stage('sonar'){
 sh "${mavenHome}/bin/mvn sonar:sonar"    
@@ -23,6 +24,7 @@ sh "${mavenHome}/bin/mvn sonar:sonar"
 stage('deployment'){
 sh "${mavenHome}/bin/mvn deploy"    
 }
+
 //Using upload Application.war into production
  stage ('Tomcat-deployment'){
 sshagent(['8b05b4bc-9e93-4526-b2a2-35e896fd501a']) {

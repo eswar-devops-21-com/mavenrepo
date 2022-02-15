@@ -2,7 +2,7 @@ node('nodes'){
 properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '2', daysToKeepStr: '', numToKeepStr: '2')), [$class: 'JobLocalConfiguration', changeReasonComment: ''], 
 pipelineTriggers([pollSCM('* * * * *')])])    
     
-def mavenHome= tool name: "maven-3.0.5"  
+def mavenHome= tool name: "maven-3.5.4"  
     
 //Get the code from GitHub Repo
 stage('checkout'){

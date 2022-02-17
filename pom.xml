@@ -34,7 +34,7 @@
     </properties>
    <distributionManagement>
         <snapshotRepository>
-            <id>deploymentRepo</id>
+            <id>deployment</id>
             <name>Internal Snapshot Releases</name>
             <url>http://13.127.13.163:8081/nexus/content/repositories/snapshots/</url>
         </snapshotRepository>

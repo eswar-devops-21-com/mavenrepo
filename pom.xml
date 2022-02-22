@@ -28,7 +28,7 @@
   <properties>
             <jdk.version>1.8</jdk.version>
             <name>Internal Releases</name>
-            <sonar.host.url>http://13.235.245.193:9000/</sonar.host.url>
+            <sonar.host.url>http://65.2.149.218/:9000/</sonar.host.url>
             <sonar.login>admin</sonar.login>
             <sonar.password>Gandhi@8451</sonar.password>
     </properties>
@@ -36,7 +36,7 @@
         <snapshotRepository>
             <id>deployment</id>
             <name>Internal Snapshot Releases</name>
-            <url>http://13.127.13.163:8081/nexus/content/repositories/snapshots/</url>
+            <url>http://52.66.188.179:8081/nexus/content/repositories/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
   <dependencies>
